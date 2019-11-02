@@ -1,0 +1,28 @@
+body {
+    background-color: #ececec;
+}
+
+.navbarbackground {
+    background-color: #c2b7b7;
+}
+
+.about {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.button {
+    background-color: #a601376b;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.button:hover {
+    background-color: #a60137ab;
+}
+
+.page_title {
+    font-weight: bolder;
+    font-size: 50px;
+}
