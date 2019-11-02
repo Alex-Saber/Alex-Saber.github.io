@@ -3,6 +3,7 @@
   <head>
     <title>Alex Saber</title>
     <meta charset="utf-8">
+    <script src="../js/index.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/index.css" type="text/css">
@@ -14,7 +15,7 @@
         <nav class="navbar navbar-expand-sm navbarbackground">
 
             <div class="container">
-                <a class="navbar-brand text-light btn btn-outline-light" href="#">Alex Saber</a>
+                <a class="navbar-brand text-light btn btn-outline-light" href="./index.html">Alex Saber</a>
                 <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
                     aria-expanded="false" aria-label="Toggle navigation"></button>
                 <div class="collapse navbar-collapse justify-content-end" id="collapsibleNavId">
@@ -23,13 +24,10 @@
                             <a class="nav-link text-light button" href="./index.html">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light button" href="./about.html" >About</a>
+                            <a class="nav-link text-light button" href="./resume.html">Resumé</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-light button" href="./resume.html">Resume</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-light button" href="./contact.html">Contact</a>
+                            <a class="nav-link text-light button contact" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
@@ -38,9 +36,68 @@
         </nav>
 
         <section class="home container ">
+            <div class="text-center w-100 mt-5 page_title">Contact</div> 
+            <section class="mb-4">
+            <p class="text-center w-responsive mx-auto mb-5">I'm always searching for a new opportunity. Please don't hesitate to contact me!</p>
+        
+            <div class="row">
+        
+                <div class="col-md-12 mb-md-0 mb-5">
+                    <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+        
+                        <div class="row">
+        
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="name" name="name" class="form-control text_inputs">
+                                    <label for="name" class="">Your name</label>
+                                </div>
+                            </div>
+        
+                            <div class="col-md-6">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="email" name="email" class="form-control text_inputs">
+                                    <label for="email" class="">Your email</label>
+                                </div>
+                            </div>
+        
+                        </div>
+        
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="md-form mb-0">
+                                    <input type="text" id="subject" name="subject" class="form-control text_inputs">
+                                    <label for="subject" class="">Subject</label>
+                                </div>
+                            </div>
+                        </div>
+        
+                        <div class="row">
+        
+                            <div class="col-md-12">
+        
+                                <div class="md-form">
+                                    <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea text_inputs"></textarea>
+                                    <label for="message">Your message</label>
+                                </div>
+        
+                            </div>
+                        </div>
+        
+                    </form>
+        
+                    <div class="text-center">
+                        <a class="btn btn-secondary" style="margin: 0 auto;" onclick="toggleThankYou()">Send</a>
+                        <div id="thank_you_message" style="margin: 20px auto 0 auto"></div>
+                    </div>
+                    
+                </div>
 
-            
-        </section>
+    
+        </div>
+    
+    </section>
+    </section>
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

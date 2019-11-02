@@ -1,5 +1,6 @@
 body {
     background-color: #ececec;
+    height:100%;
 }
 
 .navbarbackground {
@@ -25,4 +26,9 @@ body {
 .page_title {
     font-weight: bolder;
     font-size: 50px;
+}
+
+#message {
+    font-weight: bold;
+    font-size: 30px;
 }
